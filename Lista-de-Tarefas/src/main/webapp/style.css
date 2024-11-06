@@ -1,0 +1,30 @@
+.tabela {
+	left: 10%
+}
+
+#popup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+p {
+	margin-block-end: auto;
+}
+
+#nome-tarefa, #custo, #data {
+	margin-block-end: 10px;
+}
+
+.btn-excluir, .btn-editar, .btn-subir, .btn-descer {
+	width: 25px;
+	cursor: pointer;
+}
+
+/* responsividade*/
+@media (max-width: 768px) {
+	#tabela{
+		left: 25%;
+	}
+}
+

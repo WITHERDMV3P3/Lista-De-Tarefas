@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<title>Tabela</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-white">
+
+	<header> </header>
+
+	<main class=" container mt-5">
+		<div
+			class="tabela d-flex flex-column align-items-center justify-content-center w-50 position-absolute">
+			<table
+				class="table table-dark table-bordered table-striped border-primary">
+				<thead>
+					<tr>
+						<th scope="col">ID</th>
+						<th scope="col">Nome da Tarefa</th>
+						<th scope="col">Custo (R$)</th>
+						<th scope="col">Data Limite</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row"></th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+				data-bs-target="#myModal">Incluir</button>
+		</div>
+
+
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content align-items-center">
+
+
+					<div class="modal-header">
+						<h4 class="modal-title">Incluir nova Tarefa</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+
+
+					<div class="modal-body">
+						<p>Nome da Tarefa</p>
+						<input type="text" id="nome-tarefa" required>
+						<p>Custo (R$)</p>
+						<input type="text" id="custo" required>
+						<p>Data Limite</p>
+						<input type="date" id="data" required>
+					</div>
+
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger"
+							data-bs-dismiss="modal">Fechar</button>
+						<button type="submit" class="btn btn-primary">Salvar
+							Tarefa</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer> </footer>
+	<script src="script.js"></script>
+
+</body>
+</html>

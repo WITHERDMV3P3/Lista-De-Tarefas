@@ -12,12 +12,19 @@ document.addEventListener("DOMContentLoaded", function(carregarTarefas) {
 			data.forEach(item => {
 				const novaLinha = document.createElement('tr');
 
-
+				function formatarData(dataISO) {
+				    if (dataISO && dataISO.includes('-')) {
+				        const [ano, mes, dia] = dataISO.split('-');
+				        return `${dia}/${mes}/${ano}`;
+				    }
+				    return dataISO; 
+				}
+				
 				const colunas = [
 					{ texto: item[0], classe: 'id_tarefa' },
 					{ texto: item[1] },
 					{ texto: item[2] },
-					{ texto: item[3] },
+					{ texto: formatarData(item[3]) },
 				];
 
 				colunas.forEach(coluna => {
